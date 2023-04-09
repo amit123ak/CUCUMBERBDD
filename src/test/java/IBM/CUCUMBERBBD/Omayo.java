@@ -62,7 +62,7 @@ public class Omayo {
 	    	
 	    	if(actualstatus.equals(expectedstatus))
 	    	{
-	    		System.out.println("hello");
+	    		//nothing to do
 	    	}else 
 	    	{
 	    	Assert.fail("actual login status is not equal to expected login status");
