@@ -23,23 +23,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/amitkumr.gond/.m2/repository/io/cucumber/cucumber-java/6.10.2/cucumber-java-6.10.2.jar" sourcepath="/home/amitkumr.gond/.m2/repository/io/cucumber/cucumber-java/6.10.2/cucumber-java-6.10.2-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="io.cucumber"/>
-			<attribute name="maven.artifactId" value="cucumber-java"/>
-			<attribute name="maven.version" value="6.10.2"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/amitkumr.gond/.m2/repository/com/aventstack/extentreports/4.0.0/extentreports-4.0.0.jar" sourcepath="/home/amitkumr.gond/.m2/repository/com/aventstack/extentreports/4.0.0/extentreports-4.0.0-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="com.aventstack"/>
-			<attribute name="maven.artifactId" value="extentreports"/>
-			<attribute name="maven.version" value="4.0.0"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

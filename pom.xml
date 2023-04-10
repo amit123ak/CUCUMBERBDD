@@ -50,5 +50,10 @@
 			<version>5.3.2</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+		<dependency>
+			<groupId>TestngProject</groupId>
+			<artifactId>TestngProject</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
