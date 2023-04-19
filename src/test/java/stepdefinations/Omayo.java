@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,12 +20,18 @@ import junit.framework.Assert;
 
 public class Omayo {
 	WebDriver driver;
+	    
+	    @Before("@Login")
+	    public void setup()
+	    {
+	    	WebDriverManager.chromedriver().setup();
+	    	driver=new ChromeDriver();
+	    	driver.manage().window().maximize();
+	    	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	    }
 	   @Given("^I want to navigate to the login page$")
 	    public void _i_want_to_navigate_to_the_login_page(){
-		   WebDriverManager.chromedriver().setup();
-		    driver =new ChromeDriver();
-	        driver.manage().window().maximize();
-	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		  
 	        driver.get("http://omayo.blogspot.com/");
 	        
 	        
@@ -67,6 +75,11 @@ public class Omayo {
 	    	{
 	    	Assert.fail("actual login status is not equal to expected login status");
 	    	}
-	    	driver.quit();
+	    	
+	    }
+	    @After("@Login")
+	    public void teardown()
+	    {
+         driver.quit();
 	    }
 }
