@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin={"html:target/cucumber_html_report.html","pretty"},
 features="features",glue="stepdefinations",
-tags="@ALL")
+tags="@ninja")
 public class Runner {
 
 }

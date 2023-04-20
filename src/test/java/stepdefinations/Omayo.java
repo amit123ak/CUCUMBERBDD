@@ -28,6 +28,7 @@ public class Omayo {
 	    	driver=new ChromeDriver();
 	    	driver.manage().window().maximize();
 	    	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	    	
 	    }
 	   @Given("^I want to navigate to the login page$")
 	    public void _i_want_to_navigate_to_the_login_page(){
